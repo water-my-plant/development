@@ -12,6 +12,8 @@ nav {
   padding-bottom: 2 rem;
 }
 nav a {
-  color: black;
+  color: green;
+  border: 1px solid black;
+  background: yellowgreen;
   text-decoration: none;
 }
