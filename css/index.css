@@ -1,6 +1,10 @@
 .container {
   font-size: 62.5%;
 }
+body {
+  background-image: url("https://github.com/water-my-plant/development/blob/development/assets/img/green-plant.jpg");
+  background-color: #cccccc;
+}
 nav {
   font-size: 1.5rem;
   display: flex;
