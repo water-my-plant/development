@@ -17,3 +17,10 @@ nav a {
   background: yellowgreen;
   text-decoration: none;
 }
+.about {
+  font-size: 1.1rem;
+  padding-top: 25rem;
+}
+.ContactForum {
+  padding-top: 45rem;
+}
