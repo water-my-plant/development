@@ -1,6 +1,10 @@
 .container {
   font-size: 62.5%;
 }
+body {
+  background-image: url("https://images.pexels.com/photos/2907117/pexels-photo-2907117.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  background-color: #cccccc;
+}
 nav {
   font-size: 1.5rem;
   display: flex;
@@ -8,6 +12,8 @@ nav {
   padding-bottom: 2 rem;
 }
 nav a {
-  color: black;
+  color: green;
+  border: 1px solid black;
+  background: yellowgreen;
   text-decoration: none;
 }
