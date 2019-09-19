@@ -4,6 +4,33 @@
 html {
   font-size: 62.5%;
 }
+.container {
+  font-size: 62.5%;
+}
+.container body {
+  background-image: image();
+  background-color: #cccccc;
+  background-repeat: none;
+}
+.container nav {
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 2 rem;
+}
+.container nav a {
+  color: green;
+  border: 1px solid black;
+  background: yellowgreen;
+  text-decoration: none;
+}
+.container .about {
+  font-size: 1.1rem;
+  padding-top: 25rem;
+}
+.container .ContactForum {
+  padding-top: 35rem;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -131,31 +158,4 @@ q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0;
-}
-.container {
-  font-size: 62.5%;
-}
-body {
-  background-image: image();
-  background-color: #cccccc;
-  background-repeat: none;
-}
-nav {
-  font-size: 1.5rem;
-  display: flex;
-  justify-content: space-between;
-  padding-bottom: 2 rem;
-}
-nav a {
-  color: green;
-  border: 1px solid black;
-  background: yellowgreen;
-  text-decoration: none;
-}
-.about {
-  font-size: 1.1rem;
-  padding-top: 25rem;
-}
-.ContactForum {
-  padding-top: 35rem;
 }
