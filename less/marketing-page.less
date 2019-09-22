@@ -1,17 +1,29 @@
+
+body {
+  
+  
+  background-image: url(https://images.pexels.com/photos/807598/pexels-photo-807598.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+  background-size: cover;
+  width: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.7;
+  
+    
+}
 .container {
-    font-size: 62.5%;
-
-
-    body {
-        background-image: url(https://images.pexels.com/photos/1877920/pexels-photo-1877920.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
-        background: @white;
-        background-repeat: none;
-    }
-
+    
+    color: aliceblue;
+     width: 50%;
+     margin: 0 auto;
+     opacity: 1;
+    background-color: rgba(248, 244, 244, 0.863)
 
     nav {
         display: flex;
-        font-size: 1.5rem;
+        font-size: 1.8rem;
         padding: 1 rem;
         justify-content: space-evenly;
         align-content: center;
@@ -20,19 +32,130 @@
             border: 1px solid black;
             background: @text-color-dark;
             text-decoration: none;
+            text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+            &:hover {text-shadow: 0px 0px 7px rgba(0,200,0,0.7)};
 
 
         }
     }
 
     .about {
-        font-size: 1.1rem;
+        font-size: 1.6rem;
         padding-top: 25rem;
+        
     }
+}
 
 
-    .ContactForum{
-    padding-top: 35rem;
-    }
+html {
+    font-size: 62.5%;
 
 }
+
+p{
+    font-size: 2.0rem;
+}
+
+
+.mini-features {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+  }
+.mini-features .feature {
+    width: 48%;
+    height: 300px;
+    background: green;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    justify-content: center;
+    margin: 5px;
+    border-radius: 2rem;
+  }
+  .mini-features .feature img {
+    width: 30%;
+    padding: 5px;
+    margin-top: 15px;
+  }
+  .mini-features .feature p {
+    font-size: 3rem;
+    color: whitesmoke;
+    text-shadow: 2px 5px black;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .whatwedo{
+      display: flex;
+      flex-direction: column;
+      flex-direction: row;
+      width:100%;
+      font-size: 1rem;
+      text-shadow: 2px 2px 5px rgb(11, 255, 3);
+   .wwd1, .wwd2, .wwd3 {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        justify-content: space-between;
+        background-color: rgba(255,255,255,0.5);
+        color:black;
+   }
+    
+      
+  }
+
+
+  .whatwedo .wwd1 {
+    width: 30%;
+    padding: 5px;
+    margin-top: 15px;
+  }
+  .whatwedo .wwd2 {
+    width: 30%;
+    padding: 5px;
+    margin-top: 15px;
+  }
+  .whatwedo .wwd3{
+    width: 30%;
+    padding: 5px;
+    margin-top: 15px;
+  }
+  .whatwedo .wwd1 {
+    font-size: 3rem;
+   
+    
+    padding: 20px;
+    text-align: center;
+  }
+  .whatwedo .wwd2 {
+    font-size: 3rem;
+    
+   
+    padding: 20px;
+    text-align: center;
+  }
+  .whatwedo .wwd3{
+    font-size: 3rem;
+    
+    
+    padding: 20px;
+    text-align: center;
+  }
+
+  body, html {
+    height: 100%;
+  }
+  
+  @media only screen and (max-device-width: 700px) {
+  
+}
+  @media only screen and (max-device-width: 1360px) {
+    body {
+      background-attachment: scroll;
+    }
+  }
