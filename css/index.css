@@ -127,19 +127,19 @@ table {
   border-spacing: 0;
 }
 body {
-  background-image: url(https://images.pexels.com/photos/807598/pexels-photo-807598.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+  font-family: 'Open Sans Condensed', sans-serif;
+  background-image: url(https://images.pexels.com/photos/1650032/pexels-photo-1650032.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
   width: 100%;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  opacity: 0.7;
+  opacity: 0.8;
 }
 .container {
-  color: aliceblue;
-  width: 50%;
+  color: #FFFFFF;
+  width: 75%;
   margin: 0 auto;
-  opacity: 1;
 }
 .container nav {
   display: flex;
@@ -150,17 +150,39 @@ body {
 }
 .container nav a {
   color: #FFFFFF;
-  border: 1px solid black;
-  background: #595959;
+  background: #666633;
   text-decoration: none;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
 }
 .container nav a:hover {
-  text-shadow: 0px 0px 7px rgba(0, 200, 0, 0.7);
+  text-shadow: 0px 0px 7px #d4d4aa;
 }
 .container .about {
   font-size: 1.6rem;
   padding-top: 25rem;
+  background-color: none;
+  position: relative;
+  text-align: center;
+}
+.container .about h1 {
+  font-size: 400%;
+  color: #333333;
+  font-weight: bolder;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-shadow: 2px 2px #666633;
+}
+.container .about p {
+  width: 90%;
+  font-size: 150%;
+  color: #333333;
+  font-weight: bold;
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 html {
   font-size: 62.5%;
@@ -178,7 +200,7 @@ p {
 .mini-features .feature {
   width: 48%;
   height: 300px;
-  background: green;
+  background: #0a6307;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -200,23 +222,36 @@ p {
   text-align: center;
 }
 .whatwedo {
-  display: flex;
-  flex-direction: column;
-  flex-direction: row;
-  width: 100%;
-  font-size: 1rem;
-  text-shadow: 2px 2px 5px #0bff03;
+  padding: 25px;
 }
-.whatwedo .wwd1,
-.whatwedo .wwd2,
-.whatwedo .wwd3 {
+.whatwedo .wwd {
+  width: 100%;
+  height: auto;
+  margin-bottom: 25px;
+  text-align: center;
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
   justify-content: center;
-  justify-content: space-between;
-  background-color: rgba(255, 255, 255, 0.5);
-  color: black;
+  flex-wrap: wrap;
+  background-color: #d4d4aa;
+  color: #595959;
+  border-radius: 2rem;
+}
+.whatwedo .wwd p {
+  padding: 15px;
+}
+.whatwedo .wwd img {
+  opacity: 1;
+  width: 90%;
+  padding: 10px;
+  border-radius: 2rem;
+}
+.whatwedo .wwd button {
+  width: 48%;
+  height: 50px;
+  border-radius: 1rem;
+  color: #FFFFFF;
+  background: #666633;
+  margin: 15px;
 }
 .whatwedo .wwd1 {
   width: 30%;
@@ -260,7 +295,7 @@ html {
 /* Sidebar */
 #sidebar {
   padding: 2.5em 2.5em 0.5em 2.5em;
-  background: green;
+  background: #666633;
   cursor: default;
   height: 100vh;
   left: 0;
@@ -314,7 +349,6 @@ body.is-ie #sidebar > .inner {
   position: relative;
   text-decoration: none;
   text-transform: uppercase;
-  border: 1px solid black;
 }
 #sidebar nav a:before,
 #sidebar nav a:after {
@@ -327,7 +361,7 @@ body.is-ie #sidebar > .inner {
   width: 100%;
 }
 #sidebar nav a:before {
-  background: darkolivegreen;
+  background: #666633;
 }
 #sidebar nav a:after {
   background-image: linear-gradient(to right, #666633, #d4d4aa);
@@ -335,7 +369,7 @@ body.is-ie #sidebar > .inner {
   max-width: 0;
 }
 #sidebar nav a:hover {
-  color: rgba(255, 255, 255, 0.55);
+  color: #d4d4aa;
 }
 #sidebar nav a.active {
   color: #ffffff;
@@ -352,9 +386,9 @@ body.is-preload #sidebar nav ul li {
 }
 @media screen and (max-width: 1280px) {
   #sidebar {
-    height: 3.5em;
+    height: 6em;
     left: 0;
-    line-height: 3.5em;
+    line-height: 6em;
     overflow: hidden;
     padding: 0;
     text-align: center;
@@ -362,7 +396,9 @@ body.is-preload #sidebar nav ul li {
     width: 100%;
   }
   #sidebar > .inner {
+    display: flex;
     flex-direction: row;
+    align-content: center;
     align-items: stretch;
     height: inherit;
     line-height: inherit;
