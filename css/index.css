@@ -435,3 +435,57 @@ body.is-preload #sidebar nav ul li {
     display: flex;
   }
 }
+.header {
+  width: 100%;
+  height: auto;
+  font-size: 1.6rem;
+  padding-top: 25rem;
+  background-color: none;
+  position: relative;
+  text-align: center;
+}
+.header h1 {
+  font-size: 400%;
+  color: #333333;
+  font-weight: bolder;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-shadow: 2px 2px #666633;
+}
+.resources {
+  padding: 25px;
+}
+.resources .resourcebox {
+  width: 100%;
+  height: auto;
+  margin-bottom: 25px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: #d4d4aa;
+  color: #595959;
+  border-radius: 2rem;
+}
+.resources .resourcebox .images {
+  width: 80%;
+}
+.resources .resourcebox .images img {
+  opacity: 1;
+  width: 50%;
+  padding: 10px;
+  border-radius: 2rem;
+}
+.resources .resourcebox p {
+  padding: 15px;
+}
+.resources .resourcebox button {
+  width: 48%;
+  height: 50px;
+  border-radius: 1rem;
+  color: #FFFFFF;
+  background: #666633;
+  margin: 15px;
+}
