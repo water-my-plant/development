@@ -287,6 +287,11 @@ body,
 html {
   height: 100%;
 }
+@media only screen and (max-device-width: 600px) {
+  .about .h1 {
+    color: yellow;
+  }
+}
 @media only screen and (max-device-width: 1360px) {
   body {
     background-attachment: scroll;
