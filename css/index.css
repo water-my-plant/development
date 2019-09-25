@@ -256,7 +256,6 @@ body,
 html {
   height: 100%;
 }
-
 @media (max-width: 500px) {
   body .container {
     width: 100%;
@@ -267,7 +266,6 @@ html {
     background-attachment: scroll;
   }
 }
-
 /* Sidebar */
 #sidebar {
   padding: 2.5em 2.5em 0.5em 2.5em;
