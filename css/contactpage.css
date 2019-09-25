@@ -122,3 +122,15 @@ fieldset {
   outline: 0;
   border: 1px solid #aaa;
 }
+
+button[class="home"] {
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  background:yellowgreen;
+  color: #FFF;
+  margin: 0 0 5px;
+  padding: 10px;
+  font-size: 15px;
+ 
+}
