@@ -176,7 +176,7 @@ body {
 }
 .container .about p {
   width: 90%;
-  font-size: 150%;
+  font-size: 2rem;
   color: #333333;
   font-weight: bold;
   position: absolute;
@@ -207,12 +207,33 @@ p {
 }
 .whatwedo .wwd p {
   padding: 15px;
+  font-size: 3rem;
 }
 .whatwedo .wwd img {
   opacity: 1;
   width: 90%;
   padding: 10px;
+  margin-top: 20px;
   border-radius: 2rem;
+}
+.whatwedo .wwd button {
+  width: 48%;
+  height: 50px;
+  border-radius: 1rem;
+  color: #FFFFFF;
+  background: #666633;
+  margin: 15px;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 2rem;
+}
+.whatwedo .wwd button:hover {
+  background: #6d6d3d;
+  color: #FFFFFF;
+}
+footer {
+  display: flex;
+  justify-content: center;
+  color: #595959;
 }
 body,
 html {
@@ -372,51 +393,34 @@ body.is-preload #sidebar nav ul li {
     width: 100%;
   }
 }
-.people {
+body .people {
   display: flex;
   justify-content: center;
   color: black;
-  margin-left: 25%;
+  margin-top: 25%;
+  flex-direction: column;
+}
+body .people .title {
+  display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  justify-content: center;
+  padding: 3rem;
 }
-nav {
+body .people .title .person {
   display: flex;
-  font-size: 1.8rem;
-  padding: 1 rem;
+  flex-direction: column;
+  justify-content: center;
   justify-content: space-evenly;
-  align-content: center;
-  width: 90%;
-}
-@media only screen and (max-device-width: 600px) {
-  nav nav {
-    width: 100%;
-  }
-}
-nav a {
-  color: #FFFFFF;
-  background: #666633;
-  text-decoration: none;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
-}
-nav a:hover {
-  text-shadow: 0px 0px 7px #d4d4aa;
-}
-.people {
-  display: flex;
-  flex-direction: column;
-}
-.people .person {
-  display: flex;
-  flex-direction: column;
+  align-items: center;
   width: 50%;
+  height: 200px;
+  background: #FFFFFF;
+  padding: 10px;
+  margin: 12px;
+  border-radius: 2rem;
 }
-.people .person img {
+body .people .title .person img {
   width: 45%;
-}
-.team {
-  color: #FFFFFF;
-  width: 100%;
-  margin: 0 auto;
-  display: flex;
+  height: auto;
+  border-radius: 8rem;
 }
