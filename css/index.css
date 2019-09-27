@@ -420,7 +420,13 @@ body .people .title .person {
   border-radius: 2rem;
 }
 body .people .title .person img {
-  width: 45%;
+  width: 30%;
   height: auto;
   border-radius: 8rem;
+}
+@media (max-width: 499px) {
+  img {
+    width: 195%;
+    height: 15%;
+  }
 }
