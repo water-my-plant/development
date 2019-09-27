@@ -134,4 +134,28 @@ button[class="home"] {
   font-size: 15px;
  
 }
+button[class="button"] {
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  background:yellowgreen;
+  color: #FFF;
+  margin: 0 0 5px;
+  padding: 10px;
+  font-size: 15px;
+ 
+}
 
+a.button {
+  cursor: pointer;
+  width: 100%;
+  border: 1px solid greenyellow;
+  background:transparent;
+  color:yellowgreen;
+  margin: 0 0 5px;
+  padding: 20px;
+  font-size: 25px;
+  justify-content: center;
+  align-items: center;
+  margin:50px;
+}
