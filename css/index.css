@@ -424,9 +424,30 @@ body .people .title .person img {
   height: auto;
   border-radius: 8rem;
 }
-@media (max-width: 499px) {
-  img {
-    width: 195%;
-    height: 15%;
+@media (max-width: 600px) {
+  .person {
+    font-size: 1.7rem;
+  }
+  .person img {
+    display: flex;
+    width: 150%;
+    height: auto;
+    background: none;
+    border: 1px solid green;
+  }
+}
+@media (max-width: 600px) {
+  body .people .title .person {
+    background: transparent;
+    font-size: 2rem;
+  }
+  body .people .title .person img {
+    width: 110%;
+    justify-content: center;
+  }
+}
+@media (max-width: 600px) {
+  h2 {
+    font-size: 2rem;
   }
 }
