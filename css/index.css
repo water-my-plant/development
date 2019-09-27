@@ -158,68 +158,29 @@ body {
   text-shadow: 0px 0px 7px #d4d4aa;
 }
 .container .about {
-  font-size: 1.6rem;
-  padding-top: 25rem;
+  padding-top: 10rem;
   background-color: none;
   position: relative;
   text-align: center;
 }
 .container .about h1 {
-  font-size: 400%;
+  font-size: 7rem;
   color: #333333;
   font-weight: bolder;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   text-shadow: 2px 2px #666633;
 }
 .container .about p {
+  margin-top: 1.2rem;
   width: 90%;
-  font-size: 150%;
+  font-size: 2rem;
   color: #333333;
   font-weight: bold;
-  position: absolute;
-  top: 90%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
 html {
   font-size: 62.5%;
 }
 p {
   font-size: 2rem;
-}
-.mini-features {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  justify-content: space-between;
-}
-.mini-features .feature {
-  width: 48%;
-  height: 300px;
-  background: #0a6307;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  justify-content: center;
-  margin: 5px;
-  border-radius: 2rem;
-}
-.mini-features .feature img {
-  width: 30%;
-  padding: 5px;
-  margin-top: 15px;
-}
-.mini-features .feature p {
-  font-size: 3rem;
-  color: whitesmoke;
-  text-shadow: 2px 5px black;
-  padding: 20px;
-  text-align: center;
 }
 .whatwedo {
   padding: 25px;
@@ -238,11 +199,13 @@ p {
 }
 .whatwedo .wwd p {
   padding: 15px;
+  font-size: 3rem;
 }
 .whatwedo .wwd img {
   opacity: 1;
   width: 90%;
   padding: 10px;
+  margin-top: 20px;
   border-radius: 2rem;
 }
 .whatwedo .wwd button {
@@ -252,44 +215,28 @@ p {
   color: #FFFFFF;
   background: #666633;
   margin: 15px;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 2rem;
 }
-.whatwedo .wwd1 {
-  width: 30%;
-  padding: 5px;
-  margin-top: 15px;
+.whatwedo .wwd button:hover {
+  background: #6d6d3d;
+  color: #FFFFFF;
 }
-.whatwedo .wwd2 {
-  width: 30%;
-  padding: 5px;
-  margin-top: 15px;
-}
-.whatwedo .wwd3 {
-  width: 30%;
-  padding: 5px;
-  margin-top: 15px;
-}
-.whatwedo .wwd1 {
-  font-size: 3rem;
-  padding: 20px;
-  text-align: center;
-}
-.whatwedo .wwd2 {
-  font-size: 3rem;
-  padding: 20px;
-  text-align: center;
-}
-.whatwedo .wwd3 {
-  font-size: 3rem;
-  padding: 20px;
-  text-align: center;
+footer {
+  display: flex;
+  justify-content: center;
+  color: #595959;
 }
 body,
 html {
   height: 100%;
 }
-@media only screen and (max-device-width: 1360px) {
-  body {
-    background-attachment: scroll;
+@media (max-width: 500px) {
+  body .container {
+    width: 100%;
+  }
+  body .about h1 {
+    font-size: 2rem;
   }
 }
 /* Sidebar */
@@ -304,7 +251,7 @@ html {
   position: fixed;
   text-align: right;
   top: 0;
-  width: 15em;
+  width: 15rem;
   z-index: 10000;
 }
 #sidebar > .inner {
@@ -430,8 +377,65 @@ body.is-preload #sidebar nav ul li {
     background-color: #666633;
   }
 }
-@media screen and (max-width: 736px) {
+@media screen and (max-width: 536px) {
   #sidebar {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+}
+body .people {
+  display: flex;
+  justify-content: center;
+  color: black;
+  margin-top: 25%;
+  flex-direction: column;
+}
+body .people .title {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 3rem;
+}
+body .people .title .person {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 50%;
+  height: 200px;
+  background: #FFFFFF;
+  padding: 10px;
+  margin: 12px;
+  border-radius: 2rem;
+}
+body .people .title .person img {
+  width: 30%;
+  height: auto;
+  border-radius: 8rem;
+}
+body .people .title .person {
+  background-color: rgba(2, 233, 125, 0.842);
+}
+.people h2,
+h1 {
+  font-size: 2rem;
+  text-shadow: 2px 3px 5px;
+}
+@media (max-width: 600px) {
+  body .people .title .person {
+    background: transparent;
+    font-size: 2rem;
+  }
+  body .people .title .person img {
+    width: 150%;
+    justify-content: center;
+  }
+}
+@media (max-width: 600px) {
+  h2 {
+    font-size: 2rem;
   }
 }
