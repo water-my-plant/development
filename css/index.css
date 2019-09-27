@@ -170,6 +170,7 @@ body {
   text-shadow: 2px 2px #666633;
 }
 .container .about p {
+  margin-top: 1.2rem;
   width: 90%;
   font-size: 2rem;
   color: #333333;
