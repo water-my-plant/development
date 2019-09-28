@@ -4,7 +4,7 @@ Water My Plants ReadMe
 
 With plants in and around the house it's easy to neglect or even water them too much.  Many a plant has died from
 over watering.  Why?  Because its owners did not keep to the proper watering schedule for their plant.  Orchids 
-need consisten but different watering than cacti.  And even within the cactus variety, watering can differ species
+need consistent but different watering than cacti.  And even within the cactus variety, watering can differ species
 to species.  
 
 Enter Water My Plants.  The full service water concierge service that does the research for you.  All you have to 
