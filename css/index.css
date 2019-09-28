@@ -164,7 +164,9 @@ body {
   text-align: center;
 }
 .container .about h1 {
-  font-size: 7rem;
+
+  font-size: 6vw;
+  padding: 15px;
   color: #333333;
   font-weight: bolder;
   text-shadow: 2px 2px #666633;
@@ -236,7 +238,8 @@ html {
     width: 100%;
   }
   body .about h1 {
-    font-size: 2rem;
+    color: purple;
+    font-size: 6vw;
   }
 }
 /* Sidebar */
